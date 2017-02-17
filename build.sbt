@@ -4,13 +4,21 @@ name := "scala-force-layout"
 
 version := "0.4.0"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.1"
 
 publishMavenStyle := true
 
-libraryDependencies ++= Seq(
-  "com.propensive" % "rapture-io" % "0.7.2"
-)
+// resolvers ++= Seq(
+//   // other resolvers here
+//   // if you want to use snapshot builds (currently 0.12-SNAPSHOT), use this.
+//   "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/",
+//   "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
+//   )
+//
+//
+// libraryDependencies ++= Seq(
+//   "com.propensive" % "rapture-io" % "2.0.0-M7"
+// )
 
 // Extras for publishing to Sonatype Maven repository
 // Use 'sbt publish-signed' to publish
