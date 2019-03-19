@@ -1,0 +1,158 @@
+INFO  time: initialize in 0.16s
+INFO  running 'sbt metalsEnable bloopInstall'
+INFO  [info] Loading settings for project global-plugins from metals.sbt ...
+INFO  [info] Loading global plugins from /home/gadgil/.sbt/1.0/plugins
+INFO  running 'sbt metalsEnable bloopInstall'
+INFO  [info] Updating ProjectRef(uri("file:/home/gadgil/.sbt/1.0/plugins/"), "global-plugins")...
+INFO  user cancelled build import
+INFO  time: ran 'sbt bloopInstall' in 14s
+INFO  sbt exit: 143
+INFO  [info] Loading settings for project global-plugins from metals.sbt ...
+INFO  [info] Loading global plugins from /home/gadgil/.sbt/1.0/plugins
+INFO  [info] Updating ProjectRef(uri("file:/home/gadgil/.sbt/1.0/plugins/"), "global-plugins")...
+INFO  [info] Done updating.
+INFO  [info] Loading settings for project scala-force-layout-build from plugins.sbt ...
+INFO  [info] Loading project definition from /home/gadgil/code/scala-force-layout/project
+INFO  [info] Updating ProjectRef(uri("file:/home/gadgil/code/scala-force-layout/project/"), "scala-force-layout-build")...
+INFO  [warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+INFO  [warn] 	::          UNRESOLVED DEPENDENCIES         ::
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	:: com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: sbt-plugin-releases: unable to get resource for com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.12/sbt_1.0/2.1.2/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org: Name or service not known
+[warn] 	:: com.typesafe.sbt#sbt-pgp;0.8: sbt-plugin-releases: unable to get resource for com.typesafe.sbt#sbt-pgp;0.8: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-pgp/scala_2.12/sbt_1.0/0.8/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+INFO  [warn] 
+[warn] 	Note: Some unresolved dependencies have extra attributes.  Check that these dependencies exist with the requested attributes.
+INFO  [warn] 		com.typesafe.sbteclipse:sbteclipse-plugin:2.1.2 (scalaVersion=2.12, sbtVersion=1.0)
+[warn] 		com.typesafe.sbt:sbt-pgp:0.8 (scalaVersion=2.12, sbtVersion=1.0)
+[warn] 
+[warn] 	Note: Unresolved dependencies path:
+[warn] 		com.typesafe.sbteclipse:sbteclipse-plugin:2.1.2 (scalaVersion=2.12, sbtVersion=1.0) (/home/gadgil/code/scala-force-layout/project/plugins.sbt#L1-2)
+[warn] 		  +- default:scala-force-layout-build:0.1.0-SNAPSHOT (scalaVersion=2.12, sbtVersion=1.0)
+[warn] 		com.typesafe.sbt:sbt-pgp:0.8 (scalaVersion=2.12, sbtVersion=1.0) (/home/gadgil/code/scala-force-layout/project/plugins.sbt#L3-4)
+[warn] 		  +- default:scala-force-layout-build:0.1.0-SNAPSHOT (scalaVersion=2.12, sbtVersion=1.0)
+INFO  [error] sbt.librarymanagement.ResolveException: unresolved dependency: com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: sbt-plugin-releases: unable to get resource for com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.12/sbt_1.0/2.1.2/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org: Name or service not known
+[error] unresolved dependency: com.typesafe.sbt#sbt-pgp;0.8: sbt-plugin-releases: unable to get resource for com.typesafe.sbt#sbt-pgp;0.8: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-pgp/scala_2.12/sbt_1.0/0.8/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org
+[error] 	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:332)
+[error] 	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)
+[error] 	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:239)
+[error] 	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)
+[error] 	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)
+[error] 	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)
+[error] 	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:95)
+[error] 	at xsbt.boot.Locks$GlobalLock.xsbt$boot$Locks$GlobalLock$$withChannelRetries$1(Locks.scala:80)
+[error] 	at xsbt.boot.Locks$GlobalLock$$anonfun$withFileLock$1.apply(Locks.scala:99)
+INFO  [error] 	at xsbt.boot.Using$.withResource(Using.scala:10)
+[error] 	at xsbt.boot.Using$.apply(Using.scala:9)
+[error] 	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:60)
+[error] 	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:50)
+[error] 	at xsbt.boot.Locks$.apply0(Locks.scala:31)
+[error] 	at xsbt.boot.Locks$.apply(Locks.scala:28)
+[error] 	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)
+[error] 	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)
+[error] 	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)
+[error] 	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:238)
+[error] 	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)
+[error] 	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)
+[error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)
+[error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:45)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:93)
+[error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:106)
+[error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:224)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:106)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:89)
+[error] 	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)
+[error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:120)
+[error] 	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2556)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:44)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:40)
+[error] 	at sbt.std.Transform$$anon$4.work(System.scala:67)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:269)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+[error] 	at sbt.Execute.work(Execute.scala:278)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:269)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:748)
+INFO  [error] (update) sbt.librarymanagement.ResolveException: unresolved dependency: com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: sbt-plugin-releases: unable to get resource for com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.12/sbt_1.0/2.1.2/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org: Name or service not known
+[error] unresolved dependency: com.typesafe.sbt#sbt-pgp;0.8: sbt-plugin-releases: unable to get resource for com.typesafe.sbt#sbt-pgp;0.8: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-pgp/scala_2.12/sbt_1.0/0.8/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org
+INFO  [error] Total time: 23 s, completed 19 Mar, 2019 2:18:23 PM
+INFO  Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore?
+INFO  [info] Updating ProjectRef(uri("file:/home/gadgil/code/scala-force-layout/project/"), "scala-force-layout-build")...
+ERROR Waiting for lock on /home/gadgil/.ivy2/.sbt.ivy.lock to be available...
+INFO  [warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[warn] 	::          UNRESOLVED DEPENDENCIES         ::
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+INFO  [warn] 	:: com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: sbt-plugin-releases: unable to get resource for com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.12/sbt_1.0/2.1.2/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org: Name or service not known
+[warn] 	:: com.typesafe.sbt#sbt-pgp;0.8: sbt-plugin-releases: unable to get resource for com.typesafe.sbt#sbt-pgp;0.8: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-pgp/scala_2.12/sbt_1.0/0.8/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org
+[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+INFO  [warn] 
+[warn] 	Note: Some unresolved dependencies have extra attributes.  Check that these dependencies exist with the requested attributes.
+[warn] 		com.typesafe.sbteclipse:sbteclipse-plugin:2.1.2 (scalaVersion=2.12, sbtVersion=1.0)
+INFO  [warn] 		com.typesafe.sbt:sbt-pgp:0.8 (scalaVersion=2.12, sbtVersion=1.0)
+[warn] 
+[warn] 	Note: Unresolved dependencies path:
+[warn] 		com.typesafe.sbteclipse:sbteclipse-plugin:2.1.2 (scalaVersion=2.12, sbtVersion=1.0) (/home/gadgil/code/scala-force-layout/project/plugins.sbt#L1-2)
+[warn] 		  +- default:scala-force-layout-build:0.1.0-SNAPSHOT (scalaVersion=2.12, sbtVersion=1.0)
+[warn] 		com.typesafe.sbt:sbt-pgp:0.8 (scalaVersion=2.12, sbtVersion=1.0) (/home/gadgil/code/scala-force-layout/project/plugins.sbt#L3-4)
+[warn] 		  +- default:scala-force-layout-build:0.1.0-SNAPSHOT (scalaVersion=2.12, sbtVersion=1.0)
+INFO  [error] sbt.librarymanagement.ResolveException: unresolved dependency: com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: sbt-plugin-releases: unable to get resource for com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.12/sbt_1.0/2.1.2/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org: Name or service not known
+[error] unresolved dependency: com.typesafe.sbt#sbt-pgp;0.8: sbt-plugin-releases: unable to get resource for com.typesafe.sbt#sbt-pgp;0.8: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-pgp/scala_2.12/sbt_1.0/0.8/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org
+[error] 	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:332)
+INFO  [error] 	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)
+INFO  [error] 	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:239)
+[error] 	at sbt.internal.librarymanagement.IvySbt.$anonfun$withIvy$1(Ivy.scala:204)
+[error] 	at sbt.internal.librarymanagement.IvySbt.sbt$internal$librarymanagement$IvySbt$$action$1(Ivy.scala:70)
+[error] 	at sbt.internal.librarymanagement.IvySbt$$anon$3.call(Ivy.scala:77)
+[error] 	at xsbt.boot.Locks$GlobalLock.withChannel$1(Locks.scala:92)
+[error] 	at xsbt.boot.Locks$GlobalLock.xsbt$boot$Locks$GlobalLock$$withChannelRetries$1(Locks.scala:80)
+[error] 	at xsbt.boot.Locks$GlobalLock$$anonfun$withFileLock$1.apply(Locks.scala:99)
+[error] 	at xsbt.boot.Using$.withResource(Using.scala:10)
+[error] 	at xsbt.boot.Using$.apply(Using.scala:9)
+[error] 	at xsbt.boot.Locks$GlobalLock.ignoringDeadlockAvoided(Locks.scala:60)
+[error] 	at xsbt.boot.Locks$GlobalLock.withLock(Locks.scala:50)
+[error] 	at xsbt.boot.Locks$.apply0(Locks.scala:31)
+[error] 	at xsbt.boot.Locks$.apply(Locks.scala:28)
+[error] 	at sbt.internal.librarymanagement.IvySbt.withDefaultLogger(Ivy.scala:77)
+[error] 	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:199)
+[error] 	at sbt.internal.librarymanagement.IvySbt.withIvy(Ivy.scala:196)
+[error] 	at sbt.internal.librarymanagement.IvySbt$Module.withModule(Ivy.scala:238)
+[error] 	at sbt.internal.librarymanagement.IvyActions$.updateEither(IvyActions.scala:193)
+[error] 	at sbt.librarymanagement.ivy.IvyDependencyResolution.update(IvyDependencyResolution.scala:20)
+[error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:56)
+[error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:45)
+INFO  [error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:93)
+[error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:68)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$19(LibraryManagement.scala:106)
+[error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:224)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:106)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:89)
+[error] 	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:149)
+[error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:120)
+[error] 	at sbt.Classpaths$.$anonfun$updateTask$5(Defaults.scala:2556)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:44)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:40)
+[error] 	at sbt.std.Transform$$anon$4.work(System.scala:67)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:269)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+[error] 	at sbt.Execute.work(Execute.scala:278)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:269)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:748)
+INFO  [error] (update) sbt.librarymanagement.ResolveException: unresolved dependency: com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: sbt-plugin-releases: unable to get resource for com.typesafe.sbteclipse#sbteclipse-plugin;2.1.2: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.12/sbt_1.0/2.1.2/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org: Name or service not known
+[error] unresolved dependency: com.typesafe.sbt#sbt-pgp;0.8: sbt-plugin-releases: unable to get resource for com.typesafe.sbt#sbt-pgp;0.8: res=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-pgp/scala_2.12/sbt_1.0/0.8/ivys/ivy.xml: java.net.UnknownHostException: repo.scala-sbt.org
+INFO  Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore?
+INFO  sbt exit: 1
+INFO  time: ran 'sbt bloopInstall' in 47s
+ERROR sbt command failed: /usr/lib/jvm/java-8-oracle/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals5085296420822500129/sbt-launch.jar metalsEnable bloopInstall
